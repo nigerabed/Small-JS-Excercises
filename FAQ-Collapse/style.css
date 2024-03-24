@@ -1,0 +1,40 @@
+body{
+    background-color: rgb(218, 193, 243);
+    padding: 3em;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6rem;
+
+}
+
+.accordian {
+    background-color: aliceblue;
+    padding: 4px 16px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+ cursor: pointer;
+}
+
+.question{
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon{
+    margin-right: 16px;
+}
+
+.answer{
+    color: gray;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.icon.active{
+    transform: rotate(-180deg);
+}
+
+.answer.active{
+    max-height: fit-content;
+}
+
